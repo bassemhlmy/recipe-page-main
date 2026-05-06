@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "Young Serif";
+    src: url("./fonts/YoungSerif-Regular.woff2") format("woff2"),
+         url("./fonts/YoungSerif-Regular.woff") format("woff");
+    font-weight: 400; 
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Outfit";
+    src: url("./fonts/Outfit-VariableFont_wght.woff2") format("woff2"),
+         url("./fonts/Outfit-VariableFont_wght.woff") format("woff");
+    font-weight: 400  600 700; 
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 :root{
 --White: hsl(0, 0%, 100%);
 --Stone-100: hsl(30, 54%, 90%);
@@ -15,15 +34,97 @@ html{
 
 body{
     background-color: var(--Rose-50);
+    font-size: 1.6rem;
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
+    }
+
+h1,h2{
+    font-family: "Young Serif";
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+   }
+
+h2{
+    font-family: "outfit";
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--Brown-800);
+    margin-bottom: 1rem;
+}
+
+p{
+    font-family: "Outfit";
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+article{
+    margin-bottom: 2rem;
+    padding:0 3rem;
+    margin: 4rem;
 }
 
 .recipe{
-    width:90%;
-    margin: auto;
+    width:100%;
+    max-width: 70rem;
     background-color: var(--White);
-    padding: 2rem;
 }
+.time{
+    background-color: var(--Rose-50);
+    padding: 1rem 3rem;
+}
+
+.time h2{
+    font-size: 2rem;
+}
+
+td:last-child{
+    font-weight: 700;
+    color: var(--Brown-800);
+}
+
+.instructions li::marker{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--Brown-800);
+    
+}
+
+p > strong {
+    font-weight: 700;
+}
+
+li p{
+    margin-left: 1rem;
+}
+
+.attribution{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1400px) {
+  img{
+    display: block;
+    max-width: 90%;
+    margin:auto;
+    padding: 3rem;
+    border-radius: 5rem;
+  }
+
+  .recipe{
+    margin-top: 10rem;
+}
+  }
+  
