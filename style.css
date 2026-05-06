@@ -1,130 +1,139 @@
 @font-face {
     font-family: "Young Serif";
     src: url("./fonts/YoungSerif-Regular.woff2") format("woff2"),
-         url("./fonts/YoungSerif-Regular.woff") format("woff");
-    font-weight: 400; 
+        url("./fonts/YoungSerif-Regular.woff") format("woff");
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: "Outfit";
     src: url("./fonts/Outfit-VariableFont_wght.woff2") format("woff2"),
-         url("./fonts/Outfit-VariableFont_wght.woff") format("woff");
-    font-weight: 400  600 700; 
+        url("./fonts/Outfit-VariableFont_wght.woff") format("woff");
+    font-weight: 400 700;
     font-style: normal;
     font-display: swap;
 }
 
 
 
-:root{
---White: hsl(0, 0%, 100%);
---Stone-100: hsl(30, 54%, 90%);
---Stone-150: hsl(30, 18%, 87%);
---Stone-600: hsl(30, 10%, 34%);
---Stone-900: hsl(24, 5%, 18%);
---Brown-800: hsl(14, 45%, 36%);
---Rose-800: hsl(332, 51%, 32%);
---Rose-50: hsl(330, 100%, 98%);
+:root {
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+
+    /* Primary */
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     background-color: var(--Rose-50);
     font-size: 1.6rem;
+    line-height: 1.6;
 }
 
-img{
+img {
     width: 100%;
-    }
+    display: block;
+}
 
-h1,h2{
+h1,
+h2 {
     font-family: "Young Serif";
 }
 
-h1{
+h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-   }
+}
 
-h2{
-    font-family: "outfit";
+h2 {
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--Brown-800);
     margin-bottom: 1rem;
 }
 
-p{
+p {
     font-family: "Outfit";
 }
 
+li{
+    margin-bottom: 1rem;
+}
 
-main{
+
+main {
     display: flex;
     justify-content: center;
 }
 
 
-article{
-    margin-bottom: 2rem;
-    padding:0 3rem;
+article {
     margin: 4rem;
+    padding: 0 3rem;
 }
 
-.recipe{
-    width:100%;
+.recipe {
+    width: 100%;
     max-width: 70rem;
     background-color: var(--White);
 }
-.time{
+
+.time {
     background-color: var(--Rose-50);
     padding: 1rem 3rem;
 }
 
-.time h2{
+.time h2 {
+    font-family: "Outfit";
     font-size: 2rem;
 }
 
-td:last-child{
+td:last-child {
     font-weight: 700;
     color: var(--Brown-800);
 }
 
-.instructions li::marker{
+.instructions li::marker {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--Brown-800);
-    
+
 }
 
-p > strong {
+p>strong {
     font-weight: 700;
 }
 
-li p{
+li p {
     margin-left: 1rem;
 }
 
-.attribution{
+.attribution {
     font-size: 2rem;
     font-weight: 600;
 }
 
 @media screen and (min-width: 1400px) {
-  img{
-    display: block;
-    max-width: 90%;
-    margin:auto;
-    padding: 3rem;
-    border-radius: 5rem;
-  }
+    img {
+        max-width: 90%;
+        margin: auto;
+        padding: 3rem;
+        border-radius: 5rem;
+    }
 
-  .recipe{
-    margin-top: 10rem;
+    .recipe {
+        margin-top: 10rem;
+    }
 }
-  }
-  
