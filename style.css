@@ -72,6 +72,23 @@ li{
     margin-bottom: 1rem;
 }
 
+.time ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.time li::marker {
+    color: var(--Rose-800);
+}
+
+.time li {
+    margin-bottom: 0.5rem;
+}
+
+.time li strong {
+    color: var(--Stone-900);
+}
+
 
 main {
     display: flex;
@@ -80,14 +97,25 @@ main {
 
 
 article {
-    margin: 4rem;
-    padding: 0 3rem;
+    margin: 0 3rem 3rem;
+    padding: 0;
+}
+
+article:not(:last-of-type) {
+    border-bottom: 1px solid var(--Stone-150);
+    padding-bottom: 3rem;
+}
+
+.recipe > article:first-of-type {
+    margin-top: 2rem;
 }
 
 .recipe {
     width: 100%;
     max-width: 70rem;
     background-color: var(--White);
+    border-radius: 1.5rem;
+    overflow: hidden;
 }
 
 .time {
@@ -103,6 +131,31 @@ article {
 td:last-child {
     font-weight: 700;
     color: var(--Brown-800);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table tr {
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+.table tr:last-child {
+    border-bottom: none;
+}
+
+.table td {
+    padding: 0.8rem 0;
+}
+
+.table td:first-child {
+    color: var(--Stone-600);
+}
+
+.table td:last-child {
+    text-align: right;
 }
 
 .instructions li::marker {
@@ -121,16 +174,17 @@ li p {
 }
 
 .attribution {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 2rem 0;
+    color: var(--Stone-600);
 }
 
 @media screen and (min-width: 1400px) {
     img {
-        max-width: 90%;
-        margin: auto;
-        padding: 3rem;
-        border-radius: 5rem;
+        max-width: 92%;
+        margin: 2rem auto;
+        border-radius: 1.5rem;
     }
 
     .recipe {
